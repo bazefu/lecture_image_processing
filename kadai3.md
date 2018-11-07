@@ -12,9 +12,9 @@ imagesc(ORG); axis image; % 画像の表示
 
 次に，カラー画像である原画像を白黒濃淡画像へと変更する．
 
-ORG=imread('Itsumono.png'); % 原画像の入力
-ORG= rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換
-imagesc(ORG); colormap(gray); colorbar; % 画像の表示
+ORG=imread('Itsumono.png'); % 原画像の入力  
+ORG= rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換  
+imagesc(ORG); colormap(gray); colorbar; % 画像の表示  
 
 白黒濃淡画像へと変更した結果を図２に示す．
 
