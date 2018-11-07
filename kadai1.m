@@ -6,30 +6,30 @@
 
 clear; % •Ï”‚ÌƒI[ƒ‹ƒNƒŠƒA
 
-ORG=imread('Lenna.png'); % Œ´‰æ‘œ‚Ì“ü—Í
-imagesc(ORG); axis image; % ‰æ‘œ‚Ì•\¦
+ORG=imread('Itsumono.png'); % Œ´‰æ‘œ‚Ì“ü—Í
+imagesc(ORG); axis image; % ‰æ‘œ‚Ì•\¦(org_img.png)
 pause; % ˆê’â~
 
 IMG = imresize(ORG,0.5); % ‰æ‘œ‚Ìk¬
 IMG2 = imresize(IMG,2,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
+imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦(kadai1_1.png)
 pause; % ˆê’â~
 
 IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
 IMG2 = imresize(IMG,4,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
+imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦(kadai1_2.png)
 pause; % ˆê’â~
 
 IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
 IMG2 = imresize(IMG,8,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
+imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦(kadai1_3.png)
 pause; % ˆê’â~
 
 IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
 IMG2 = imresize(IMG,16,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
+imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦(kadai1_4.png)
 pause; % ˆê’â~
 
 IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
 IMG2 = imresize(IMG,32,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
+imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦(kadai1_5.png)
