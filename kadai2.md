@@ -12,8 +12,8 @@ imagesc(ORG); axis image; % 画像の表示
 
 次に，カラー画像である原画像を白黒濃淡画像へと変更する．
 
-ORG=imread('Itsumono.png'); % 原画像の入力
-ORG = rgb2gray(ORG); colormap(gray); colorbar;
+ORG=imread('Itsumono.png'); % 原画像の入力  
+ORG = rgb2gray(ORG); colormap(gray); colorbar;  
 imagesc(ORG); axis image; % 画像の表示
 
 白黒濃淡画像へと変更した結果を図２に示す．
@@ -23,7 +23,7 @@ imagesc(ORG); axis image; % 画像の表示
 
 原画像を2階調にするには，0-255の値を２分割すればよい．
 
-IMG = ORG>128;
+IMG = ORG>128;  
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 0-128と129-255に分けた結果を図３に示す．
@@ -33,10 +33,10 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 同様に原画像を4階調にするには，0-255の値を４分割すればよい．すなわち，
 
-IMG0 = ORG>64;
-IMG1 = ORG>128;
-IMG2 = ORG>192;
-IMG = IMG0 + IMG1 + IMG2;
+IMG0 = ORG>64;  
+IMG1 = ORG>128;  
+IMG2 = ORG>192;  
+IMG = IMG0 + IMG1 + IMG2;  
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 とする．4階調画像の結果を図４に示す．
@@ -46,14 +46,14 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 8階調画像は，
 
-IMG0 = ORG>32;
-IMG1 = ORG>64;
-IMG2 = ORG>96;
-IMG3 = ORG>128;
-IMG4 = ORG>160;
-IMG5 = ORG>192;
-IMG6 = ORG>224;
-IMG = IMG0 + IMG1 + IMG2 + IMG3 + IMG4 + IMG5 +IMG6;
+IMG0 = ORG>32;  
+IMG1 = ORG>64;  
+IMG2 = ORG>96;  
+IMG3 = ORG>128;  
+IMG4 = ORG>160;  
+IMG5 = ORG>192;  
+IMG6 = ORG>224;  
+IMG = IMG0 + IMG1 + IMG2 + IMG3 + IMG4 + IMG5 +IMG6;  
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 となる．8階調画像の結果を図５に示す．
